@@ -1,0 +1,22 @@
+
+/* possible colors
+white: #fff (background and font) 
+blue: #00003d (background and font) 
+green: #007900 (highlights) 
+yellow:#fff22d (highlights) 
+orange: #d5652c (highlights)
+purple:#460a86 (hghlights)
+
+*/
+* {
+    box-sizing: border-box;
+}
+  
+html {
+      overflow-x: hidden;
+      width: 100%;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
