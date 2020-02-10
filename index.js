@@ -26,13 +26,14 @@ function getDogImages(number){
 function displayResults(object, number){
 // this function will display the results of the request (the images) in the DOM
    //clear results if new submit again
-   $('.image-container').html("");
+   $('.image-container').empty();
    //display the images
     $('.image-container').append(`<h2>Your ${number} dog image(s)</h2>`);
+    $('.image-container').append(`<div class='image-results'></div>`);
      for (i=0; i<number; i++){
         console.log(`this ${object.message[i]} is the value of number ${i} `);
-        $('.image-container').append(`<img src="${object.message[i]}" alt=
-        "Random Dog Image ${i}">`);
+        $('.image-results').append(`<img src="${object.message[i]}" alt=
+        "Random Dog Image ${i+1}" class="img-result">`);
       };//end of for loop
     $('.image-container').removeClass('js-hidden');
 }
