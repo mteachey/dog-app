@@ -71,6 +71,7 @@ button {
     width: 300px;
     margin: 10px;
     border:1px #000 solid;
+    align-self: center;
 }
 
 

@@ -6,11 +6,15 @@ function handleNumberChoice(){
             event.preventDefault();
             const numberOfImages = $(this).find('input[name="number-of-images"]');
             let numberOfImagesValue = 3; //default value; although reg so not sure why need default
-           if(numberOfImages.val()){
-               numberOfImagesValue = numberOfImages.val();             
-           }        
-            numberOfImages.val("");
-            getDogImages(numberOfImagesValue);
+           if(numberOfImages.val()>=1 && numberOfImages.val()<=50){
+               numberOfImagesValue = numberOfImages.val();   
+               numberOfImages.val("");
+               getDogImages(numberOfImagesValue);          
+           } 
+           else if(numberOfImages.val()<1 || numberOfImages.val()>50){
+                alert('Please enter a number between 1 and 50');
+           }       
+            
     });
 }    
 
