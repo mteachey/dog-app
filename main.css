@@ -20,3 +20,7 @@ html {
 body{
     font-family: 'Nunito', sans-serif;
 }
+
+.js-hidden{
+    display:none;
+}
