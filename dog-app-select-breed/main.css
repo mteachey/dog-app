@@ -26,7 +26,7 @@ h1{
     font-size:1.5rem;
 }
 
-#js-number-of-image-form {
+#js-breed-choice {
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -42,13 +42,13 @@ label, input, button {
 }
 
 input{
-    width:50px;
+    width:250px;
 }
 
 label {
     font-size: 1.25rem;
     margin-top:0;
-    width:200px;
+    width:250px;
 }
 
 button {

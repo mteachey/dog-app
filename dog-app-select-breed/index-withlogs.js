@@ -7,10 +7,12 @@ function handleBreedChoice(){
             const breedChoice = $(this).find('input[name="breed-choice"]');
             const breedChoiceValue = breedChoice.val();   
             const breedCorrectFormat = breedChoiceValue.replace(/\s+/g, '').toLowerCase();
+           
             breedChoice.val("");
+            console.log(`this is the entered breed ${breedCorrectFormat}`);
             getDogImage(breedCorrectFormat);
     });
-    
+    console.log('handleBreedChoice ran');
 }    
 
 function getDogImage(breed){
@@ -24,8 +26,10 @@ function getDogImage(breed){
             else{
                 displayResults(responseJSON, breed);
             }  
+            console.log(`this is the response ${responseJSON.status}`);
         })
         .catch(error => alert(`Something went wrong, please try again`));     
+        console.log('getDogImage ran');
 }
 
 function displayResults(object, breed){
